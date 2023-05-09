@@ -17,11 +17,11 @@ function Results() {
           return (
             <Paper variant='outlined' className="questionItem">
                 <div className="questionIndex">Question {index + 1}</div>
-                <h2 className="LeftMargin">{question.question}</h2>
+                <h2 className="leftMargin">{question.question}</h2>
               <p>
                 {question.userAnswer === question.correctAnswer && (
                     <>
-                        <p className='LeftMargin'>Selected Answer: {question.answers[question.userAnswer]}</p>
+                        <p className='leftMargin'>Selected Answer: {question.answers[question.userAnswer]}</p>
                         <p className='redText boldText'>You have Selected Correct Answer !!</p>   
                     </>
                 )}

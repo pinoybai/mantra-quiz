@@ -29,8 +29,8 @@ function Home() {
           return (
             <Paper variant='outlined' className="questionItem">
             <div className="questionIndex">Question {index + 1}</div>
-              <h2 className="LeftMargin">{question.question}</h2>
-              <div className="LeftMargin">
+              <h2 className="leftMargin">{question.question}</h2>
+              <div className="leftMargin">
                     <FormControl>
                         <RadioGroup
                             name={`question__${index+1}`} 
