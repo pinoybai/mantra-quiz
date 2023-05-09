@@ -38,11 +38,7 @@ function Home() {
                             onChange={(e) => {handleAnswer(e, index)}}
                         >
                             {question.answers.map((answer, i) => {
-                            return (
-                                <>
-                                    <FormControlLabel value={i} control={<Radio />} label={answer} />
-                                </>
-                            )
+                                return <FormControlLabel value={i} control={<Radio />} label={answer} />
                             })}
                         </RadioGroup>
                     </FormControl>
